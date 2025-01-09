@@ -1,12 +1,12 @@
-        // Lista de prácticas como objetos
-        const practicas = [
-            {
-                archivo: "P1",
-                titulo: "Práctica 1",
-                nombre: "Agentes Inteligentes",
-                descripcion: "Robot aspiradora: Los sensores detectan obstáculos (percepción), los datos se procesan para crear un mapa del entorno, el sistema toma decisiones sobre la dirección a seguir (razonamiento), y los motores actúan (actuadores). Si el robot queda atascado, puede aprender a evitar esa área en el futuro (aprendizaje).",
-                codigo:
-                    `
+// Lista de prácticas como objetos
+const practicas = [
+    {
+        archivo: "P1",
+        titulo: "Práctica 1",
+        nombre: "Agentes Inteligentes",
+        descripcion: "Robot aspiradora: Los sensores detectan obstáculos (percepción), los datos se procesan para crear un mapa del entorno, el sistema toma decisiones sobre la dirección a seguir (razonamiento), y los motores actúan (actuadores). Si el robot queda atascado, puede aprender a evitar esa área en el futuro (aprendizaje).",
+        codigo:
+            `
 clc;
 clear;
 
@@ -77,13 +77,13 @@ if isequal(agentPos, goalPos)
 else
     disp('El agente no pudo llegar a su objetivo.');
 end`
-            },
-            {
-                archivo: "P2",
-                titulo: "Práctica 2: BFS",
-                nombre: "Algoritmos de búsqueda no informados",
-                descripcion: "Ejemplo de búsqueda en anchura en MATLAB",
-                codigo: `
+    },
+    {
+        archivo: "P2",
+        titulo: "Práctica 2: BFS",
+        nombre: "Algoritmos de búsqueda no informados",
+        descripcion: "Ejemplo de búsqueda en anchura en MATLAB",
+        codigo: `
 % Definimos el grafo como una matriz de adyacencia
 % Ejemplo de grafo:
 % Nodo 1 está conectado a 2 y 3
@@ -130,13 +130,13 @@ end
 
 startNode = 1;
 bfs(adjMatrix, startNode);`
-            },
-            {
-                archivo: "P2",
-                titulo: "Práctica 2: DFS",
-                nombre: "Algoritmos de búsqueda no informados",
-                descripcion: "Ejemplo de búsqueda en profundidad con Matlab",
-                codigo: `
+    },
+    {
+        archivo: "P2",
+        titulo: "Práctica 2: DFS",
+        nombre: "Algoritmos de búsqueda no informados",
+        descripcion: "Ejemplo de búsqueda en profundidad con Matlab",
+        codigo: `
 % Definimos el grafo como una matriz de adyacencia
 % Ejemplo de grafo:
 % Nodo 1 está conectado a 2 y 3
@@ -175,13 +175,13 @@ visited = false(1, size(adjMatrix, 1));
 % Llamar a la función de búsqueda en profundidad
 dfs(adjMatrix, startNode, visited);
 `
-            },
-            {
-                archivo: "P3",
-                titulo: "Práctica 3",
-                nombre: "Búsqueda informada",
-                descripcion: "Ejemplo de Algoritmo A* en MATLAB",
-                codigo: `
+    },
+    {
+        archivo: "P3",
+        titulo: "Práctica 3",
+        nombre: "Búsqueda informada",
+        descripcion: "Ejemplo de Algoritmo A* en MATLAB",
+        codigo: `
 % Definir la matriz de adyacencia (grafo)
 nodos = 6; % Número de nodos
 A = [0 1 4 inf inf inf;
@@ -266,13 +266,13 @@ disp(camino);
 disp('Costo total:');
 disp(costo_total);
 `
-            },
-            {
-                archivo: "P4",
-                titulo: "Práctica 4: 3 en raya",
-                nombre: "Búsqueda Adversaria",
-                descripcion: "Algoritmo Minimax en MATLAB para tres en raya",
-                codigo: `
+    },
+    {
+        archivo: "P4",
+        titulo: "Práctica 4: 3 en raya",
+        nombre: "Búsqueda Adversaria",
+        descripcion: "Algoritmo Minimax en MATLAB para tres en raya",
+        codigo: `
 % Minimax algorithm for Tic-Tac-Toe (Tres en Raya)
 function bestMove = minimax_example()
     % Inicializa el tablero (0 = vacío, 1 = X, -1 = O)
@@ -358,13 +358,13 @@ function winner = check_winner(board)
     winner = 0;
 end
 `
-            },
-            {
-                archivo: "P4",
-                titulo: "Práctica 4: Dilema del prisionero",
-                nombre: "Búsqueda Adversaria",
-                descripcion: "Implementación del Dilema del Prisionero en MATLAB",
-                codigo: `
+    },
+    {
+        archivo: "P4",
+        titulo: "Práctica 4: Dilema del prisionero",
+        nombre: "Búsqueda Adversaria",
+        descripcion: "Implementación del Dilema del Prisionero en MATLAB",
+        codigo: `
 % Dilema del Prisionero en MATLAB
 % Definir los pagos para las posibles acciones
 % Matriz de pagos: [pago_A, pago_B]
@@ -401,19 +401,19 @@ disp(' ');
 disp('Resultado (Años de cárcel para A, Años de cárcel para B): ');
 disp(['(',num2str(outcome),')']);
 `
-            },
-            {
-                archivo: "P5",
-                titulo: "Práctica 5",
-                nombre: "Lógica de primer orden",
-                descripcion: `
+    },
+    {
+        archivo: "P5",
+        titulo: "Práctica 5",
+        nombre: "Lógica de primer orden",
+        descripcion: `
 Ejercicio propuesto:
 Una empresa de distribución de mercancías tiene varios centros de distribución (CDs) y
 clientes ubicados en diferentes ciudades. El objetivo es determinar si es posible entregar
 todos los pedidos en un tiempo máximo determinado (por ejemplo, 48 horas) desde algún
 centro de distribución cercano. Si no es posible, se deben identificar los clientes que no
 pueden ser atendidos dentro del límite de tiempo.`,
-                codigo: `
+        codigo: `
 classdef EP < matlab.apps.AppBase
 
     % Properties that correspond to app components
@@ -612,17 +612,17 @@ classdef EP < matlab.apps.AppBase
     end
 end
 `
-            },
-            {
-                archivo: "P6",
-                titulo: "Práctica 6",
-                nombre: "Razonamiento basado en reglas",
-                descripcion: `Ejercicio propuesto
+    },
+    {
+        archivo: "P6",
+        titulo: "Práctica 6",
+        nombre: "Razonamiento basado en reglas",
+        descripcion: `Ejercicio propuesto
 Desarrolle un programa con interfaz gráfica que determina la velocidad de giro de un
 ventilador de tal manera que se mantenga la temperatura a 20º centígrados en un salón de
 clase con capacidad máxima de 36 alumnos. La temperatura será siempre de 20º sin importar
 el número de alumnos que haya en el aula.`,
-                codigo: `
+        codigo: `
 classdef ControlVentiladorApp < matlab.apps.AppBase
 
     % Properties that correspond to app components
@@ -803,17 +803,17 @@ classdef ControlVentiladorApp < matlab.apps.AppBase
     end
 end
 `
-            },
-            {
-                archivo: "P7",
-                titulo: "Práctica 7",
-                nombre: "Modelos de llenado de ranuras",
-                descripcion: `Ejercicio propuesto
+    },
+    {
+        archivo: "P7",
+        titulo: "Práctica 7",
+        nombre: "Modelos de llenado de ranuras",
+        descripcion: `Ejercicio propuesto
 Haga un sistema básico de llenado de ranuras que se use para una aplicación de reserva de
 viajes. En este sistema, el usuario puede ingresar frases como "Reserva un vuelo de Madrid
 a Londres el 10 de diciembre", y el modelo identificará las ranuras Origen, Destino y
 Fecha.`,
-                codigo: `
+        codigo: `
 function sistema_reserva_gui
     % Crear la ventana principal
     fig = uifigure('Name', 'Sistema de Reserva', 'Position', [500, 200, 450, 450]);
@@ -933,15 +933,15 @@ function procesarReserva(entradaTexto, salidaOrigen, salidaDestino, salidaFecha)
 end
 
 `
-            },
-            {
-                archivo: "P8",
-                titulo: "Práctica 8",
-                nombre: "Manejo de conocimiento incierto e incompleto",
-                descripcion: `Pronóstico del Clima (Conocimiento Incierto)
+    },
+    {
+        archivo: "P8",
+        titulo: "Práctica 8",
+        nombre: "Manejo de conocimiento incierto e incompleto",
+        descripcion: `Pronóstico del Clima (Conocimiento Incierto)
 Diseño un sistema de predicción del clima que estime la probabilidad de lluvia basándose
 en datos como la humedad y la nubosidad, pero con un grado de incertidumbre.`,
-                codigo: `
+        codigo: `
 function interfaz_pronostico_clima
     % Crear la ventana principal
     fig = uifigure('Name', 'Pronóstico del Clima', 'Position', [100, 100, 250, 300]);
@@ -1055,15 +1055,15 @@ function prob_lluvia = pronostico_clima(humedad, nubosidad, temperatura)
 end
 
 `
-            },
-            {
-                archivo: "P9",
-                titulo: "Práctica 9",
-                nombre: "Características de un conjunto de datos",
-                descripcion: `Ejercicios propuestos
+    },
+    {
+        archivo: "P9",
+        titulo: "Práctica 9",
+        nombre: "Características de un conjunto de datos",
+        descripcion: `Ejercicios propuestos
 Desarrolle un programa para determinar el grado de eficiencia de un sensor detector de
 presencia mediante infrarrojo. Use una interfaz gráfica con botón de ayuda.`,
-                codigo: `
+        codigo: `
 %% Programa para evaluar la eficiencia de un sensor infrarrojo
 
 % Definir las variables
@@ -1157,18 +1157,18 @@ function mostrarAyuda()
         'HorizontalAlignment', 'left', 'VerticalAlignment', 'top');
 end
 `
-            },
-            {
-                archivo: "P10",
-                titulo: "Práctica 10",
-                nombre: "Algoritmos clasificadores basados en distancia",
-                descripcion: `Ejercicio propuesto
+    },
+    {
+        archivo: "P10",
+        titulo: "Práctica 10",
+        nombre: "Algoritmos clasificadores basados en distancia",
+        descripcion: `Ejercicio propuesto
 Desarrolle una aplicación usando un clasificador K-Vecinos Más Cercanos (K-NN) para
 reconocer dígitos escritos a mano en el conjunto de datos MNIST. Este conjunto contiene
 imágenes de dígitos (0-9), que es un caso típico para modelos de clasificación.
 Para simplificar, usaremos una versión reducida de las imágenes de MNIST y las etiquetas
 correspondientes en MATLAB.`,
-                codigo: `
+        codigo: `
 % Cargar el conjunto de datos MNIST reducido
 load('mnist_reducido.mat'); 
 % X: matriz de imágenes (n muestras x m características)
@@ -1210,17 +1210,17 @@ for i = 1:numExamples
 end
 
 `
-            },
-            {
-                archivo: "P11",
-                titulo: "Práctica 11",
-                nombre: "Árboles de decisión",
-                descripcion: `Ejercicio propuesto
+    },
+    {
+        archivo: "P11",
+        titulo: "Práctica 11",
+        nombre: "Árboles de decisión",
+        descripcion: `Ejercicio propuesto
 Programa una aplicación para clasificar pacientes como de "alto riesgo" o "bajo
 riesgo" de desarrollar una enfermedad cardíaca en función de ciertas características,
 como edad, presión arterial y colesterol. Implementa su interfaz gráfica y agrega su
 botón de ayuda.`,
-                codigo: `
+        codigo: `
 % Generar datos sintéticos para pacientes
 rng(1); % Para reproducibilidad
 numSamples = 200; % Número total de pacientes
@@ -1299,16 +1299,16 @@ function showHelp()
     msgbox(helpText, 'Ayuda');
 end
 `
-            },
-            {
-                archivo: "P12",
-                titulo: "Práctica 12",
-                nombre: "Métodos de validación",
-                descripcion: `Ejercicio propuesto
+    },
+    {
+        archivo: "P12",
+        titulo: "Práctica 12",
+        nombre: "Métodos de validación",
+        descripcion: `Ejercicio propuesto
 Desarrolle una aplicación para una Validación de un método de cromatografía líquida
 de alta eficacia (HPLC) para determinar la pureza de un fármaco en una formulación
 farmacéutica.`,
-                codigo: `
+        codigo: `
 function createHPLCApp()
     % Crear la figura principal de la aplicación
     fig = uifigure('Name', 'Validación de Método HPLC', 'Position', [100, 100, 800, 400]);
@@ -1407,16 +1407,16 @@ end
     end
 end
 `
-            },
-            {
-                archivo: "P13",
-                titulo: "Práctica 13",
-                nombre: "Algoritmos Genéticos",
-                descripcion: `Ejercicio propuesto
+    },
+    {
+        archivo: "P13",
+        titulo: "Práctica 13",
+        nombre: "Algoritmos Genéticos",
+        descripcion: `Ejercicio propuesto
 Desarrolla una apliación para optimizar un portafolio de inversiones. En este caso, nuestro
 objetivo es maximizar el retorno esperado de un portafolio, minimizando al mismo tiempo
 el riesgo (medido por la varianza del portafolio).`,
-                codigo: `
+        codigo: `
 % Parámetros del algoritmo genético
 numGeneraciones = 100;  % Número de generaciones
 poblacionTamano = 50;   % Tamaño de la población
@@ -1490,12 +1490,12 @@ disp('Mejor portafolio encontrado:');
 disp(mejorSolucion);
 
 `
-            },
-            {
-                archivo: "P14",
-                titulo: "Práctica 14",
-                nombre: "Redes neuronales",
-                descripcion: `Ejercicio propuesto
+    },
+    {
+        archivo: "P14",
+        titulo: "Práctica 14",
+        nombre: "Redes neuronales",
+        descripcion: `Ejercicio propuesto
 Desarrolle una aplicación para predecir precios de casas usando una red neuronal de
 regresión. Vamos a trabajar con un conjunto de datos de precios de viviendas con
 características como el tamaño de la casa, el número de habitaciones, el número de baños, y
@@ -1504,7 +1504,7 @@ Este ejemplo se basa en una tarea de regresión, donde la red neuronal predice u
 continuo (precio) en lugar de una clase.
 Para este ejercicio, se va a generar un conjunto de datos sintético. Puede usar un
 conjunto de datos real con características de viviendas.`,
-                codigo: `
+        codigo: `
 % Generar datos sintéticos
 rng(1); % Reproducibilidad
 numCasas = 500;
@@ -1560,34 +1560,34 @@ legend('Predicciones', 'Línea ideal');
 hold off;
 
 `
-            }
-        ];
+    }
+];
 
-        const catalogo = document.getElementById('catalogo');
+const catalogo = document.getElementById('catalogo');
 
-        // Generar tarjetas dinámicamente
-        practicas.forEach((practica, index) => {
-            const card = document.createElement('div');
-            card.className = 'card';
+// Generar tarjetas dinámicamente
+practicas.forEach((practica, index) => {
+    const card = document.createElement('div');
+    card.className = 'card';
 
-            card.innerHTML = `
+    card.innerHTML = `
                 <div class="card-body">
                     <h5 class="card-title">${practica.titulo}</h5>
                     <p class="card-text">${practica.nombre}</p>
                     <button class="btn btn-primary" onclick="abrirModal(${index})">Ver más</button>
                 </div>
             `;
-            catalogo.appendChild(card);
-        });
+    catalogo.appendChild(card);
+});
 
-        // Función para abrir el modal con detalles
-        function abrirModal(index) {
-            const practica = practicas[index];
-            document.getElementById('modalPracticaLabel').textContent = `${practica.titulo}: ${practica.nombre}`;
-            document.getElementById('descripcion').textContent = practica.descripcion;
-            const codigoElement = document.getElementById('codigo').querySelector('code');
-            codigoElement.textContent = practica.codigo;
-            hljs.highlightElement(codigoElement);
-            document.getElementById('descargar').href = `practicas/${practica.archivo}.zip`;
-            new bootstrap.Modal(document.getElementById('modalPractica')).show();
-        }
+// Función para abrir el modal con detalles
+function abrirModal(index) {
+    const practica = practicas[index];
+    document.getElementById('modalPracticaLabel').textContent = `${practica.titulo}: ${practica.nombre}`;
+    document.getElementById('descripcion').textContent = practica.descripcion;
+    const codigoElement = document.getElementById('codigo').querySelector('code');
+    codigoElement.textContent = practica.codigo;
+    hljs.highlightElement(codigoElement);
+    document.getElementById('descargar').href = `practicas/${practica.archivo}.zip`;
+    new bootstrap.Modal(document.getElementById('modalPractica')).show();
+}
