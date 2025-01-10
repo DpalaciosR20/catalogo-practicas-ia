@@ -1591,3 +1591,10 @@ function abrirModal(index) {
     document.getElementById('descargar').href = `practicas/${practica.archivo}.zip`;
     new bootstrap.Modal(document.getElementById('modalPractica')).show();
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    const popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+    const popoverList = popoverTriggerList.map((popoverTriggerEl) => {
+        return new bootstrap.Popover(popoverTriggerEl);
+    });
+});
